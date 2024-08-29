@@ -30,3 +30,27 @@
     border-color: #ECA72C;
   }
 }
+
+/* styles.css */
+.scrollbar-custom {
+  scrollbar-width: thin; /* Solo para Firefox */
+  scrollbar-color: #221E22 #ECA72C; /* Color del thumb y del track */
+}
+
+
+/* WebKit browsers (Chrome, Safari) */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #221E22; /* Color del thumb */
+  border-radius: 4px; /* Radio de borde */
+}
+
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background-color: #ECA72C; /* Color del track */
+}
+
