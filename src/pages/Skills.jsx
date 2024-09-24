@@ -1,133 +1,23 @@
 import javascriptLogo from "../assets/javascriptLogo.png";
 import reactLogo from "../assets/reactLogo.png";
 import tailwindcssLogo from "../assets/tailwindcssLogo.png";
-import daisyuiLogo from "../assets/daisyuiLogo.png";
-import CustomBtn from "../components/CustomBtn";
+import sqlLogo from "../assets/sqlLogo.png";
 
 function Skills() {
   return (
-    <div className="h-full w-full flex flex-col justify-center">
-      <div className="carousel w-full">
-        <div
-          id="jsLogo"
-          className="carousel-item w-full flex items-center justify-center flex-col gap-2"
-        >
-          <img
-            src={javascriptLogo}
-            className="h-32 w-32 border-4 border-[#ED7F27] rounded-full"
-          />
-          {/*Texto informativo*/}
-          <div>
-            <h3 className="text-[#ECA72C] font-serif underline text-center">
-              Javascript
-            </h3>
-            <div className="w-80 h-32 overflow-auto overflow-auto-y scrollbar-custom bg-[#ECA72C] border rounded border-[#ECA72C] p-2">
-              <p className="text-center text-[#221E22] font-serif">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Suscipit dolores tempora omnis? Eum exercitationem nihil
-                officiis, deserunt repudiandae, quae similique voluptatibus ex
-                earum unde, quibusdam consequuntur dolores? Dolorum, eligendi
-                aliquid.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          id="reactLogo"
-          className="carousel-item w-full flex items-center justify-center flex-col gap-2"
-        >
-          <img
-            src={reactLogo}
-            className="h-32 w-32 border-4 border-[#ED7F27] rounded-full"
-          />
-          {/*Texto informativo*/}
-          <div>
-            <h3 className="text-[#ECA72C] font-serif underline text-center">
-              React
-            </h3>
-            <div className="w-80 h-32 overflow-auto overflow-auto-y scrollbar-custom bg-[#ECA72C] border rounded border-[#ECA72C] p-2">
-              <p className="text-center text-[#221E22] font-serif">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Suscipit dolores tempora omnis? Eum exercitationem nihil
-                officiis, deserunt repudiandae, quae similique voluptatibus ex
-                earum unde, quibusdam consequuntur dolores? Dolorum, eligendi
-                aliquid.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          id="tailwindcssLogo"
-          className="carousel-item w-full flex items-center justify-center flex-col gap-2"
-        >
-          <img
-            src={tailwindcssLogo}
-            className="h-32 w-32 border-4 border-[#ED7F27] rounded-full"
-          />
-          {/*Texto informativo*/}
-          <div className="items">
-            <h3 className="text-[#ECA72C] font-serif underline text-center">
-              Tailwind Css
-            </h3>
-            <div className="w-80 h-32 overflow-auto overflow-auto-y scrollbar-custom bg-[#ECA72C] border rounded border-[#ECA72C] p-2">
-              <p className="text-center text-[#221E22] font-serif">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Su
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          id="daisyuiLogo"
-          className="carousel-item w-full flex items-center justify-center flex-col gap-2"
-        >
-          <img
-            src={daisyuiLogo}
-            className="h-32 w-32 border-4 border-[#ED7F27] rounded-full"
-          />
-          {/*Texto informativo*/}
-          <div>
-            <h3 className="text-[#ECA72C] font-serif underline text-center">
-              DaisyUi
-            </h3>
-            <div className="w-80 h-32 overflow-auto overflow-auto-y scrollbar-custom bg-[#ECA72C] border rounded border-[#ECA72C] p-2">
-              <p className="text-center text-[#221E22] font-serif">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Suscipit dolores tempora omnis? Eum exercitationem nihil
-                officiis, deserunt repudiandae, quae similique voluptatibus ex
-                earum unde, quibusdam consequuntur dolores? Dolorum, eligendi
-                aliquid.
-              </p>
-            </div>
-          </div>
-        </div>
+    <div className="justify-end flex">
+      <div className="flex w-1/3 items-center mr-48">
+        <p className="border-l-2 border-[#44355B] pl-2 text-[#ECA72C]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minima doloremque ullam iure dicta veritatis, eum cum voluptatum! Autem harum illo ipsum natus veritatis porro dolores hic, consequatur tempore corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, aliquam! Excepturi porro, accusantium ipsa eveniet optio minima aliquam animi enim debitis est eum, blanditiis quibusdam, dolorum facilis repudiandae labore iusto.</p>
       </div>
-      <div className="flex w-full justify-center gap-2 py-2">
-        <CustomBtn
-          type="submit"
-          text="1"
-          carousel
-          onClick={() => (window.location.href = "#jsLogo")}
-        />
-        <CustomBtn
-          type="submit"
-          text="2"
-          carousel
-          onClick={() => (window.location.href = "#reactLogo")}
-        />
-        <CustomBtn
-          type="submit"
-          text="3"
-          carousel
-          onClick={() => (window.location.href = "#tailwindcssLogo")}
-        />
-        <CustomBtn
-          type="submit"
-          text="4"
-          carousel
-          onClick={() => (window.location.href = "#daisyuiLogo")}
-        />
+      <div className="flex flex-col w-1/3 gap-4 mr-10 mt-36">
+        <img src={javascriptLogo} alt="javascript logo" className="w-10 h-10 rounded" />
+        <progress className="progress progress-warning w-56 bg-[#31263E]" value={68} max="100"></progress>
+        <img src={reactLogo} alt="react logo" className="w-10 h-10 rounded" />
+        <progress className="progress progress-warning w-56 bg-[#31263E]" value={50} max="100"></progress>
+        <img src={tailwindcssLogo} alt="" className="w-10 h-10 rounded" />
+        <progress className="progress progress-warning w-56 bg-[#31263E]" value={55} max="100"></progress>
+        <img src={sqlLogo} alt="" className="w-10 h-10 rounded" />
+        <progress className="progress progress-warning w-56 bg-[#31263E]" value={30} max="100"></progress>
       </div>
     </div>
   );

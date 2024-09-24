@@ -4,7 +4,6 @@ import logo from "../assets/lawLogo.png";
 const routes = [
   { path: "skills", label: "Skills" },
   { path: "work", label: "Work" },
-  { path: "contact", label: "Contact" },
 ];
 
 function Navbar() {
