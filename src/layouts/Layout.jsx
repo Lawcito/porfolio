@@ -3,18 +3,17 @@ import Navbar from "../components/Navbar";
 
 function Layout() {
   return (
-    <div className="flex flex-col w-screen h-screen bg-[#221E22]">
-      <div className="sticky top-0 lg:block hidden">
+    <div className="flex flex-col bg-[#0D3B66]">
+      <div className="sticky top-0">
      <Navbar/>
       </div>
-      <div className="h-full w-full">
+      <div className="h-screen">
         <Outlet/>
       </div>
-      <div className="hidden ">
+      <div className="hidden">
         <Navbar/>
       </div>
     </div>
   );
 }
-
 export default Layout;

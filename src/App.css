@@ -3,11 +3,11 @@
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid #ECA72C; /* The typwriter cursor */
+  border-right: 0.15em solid #0D3B66; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.10em; /* Adjust as needed */
-  animation: typing 2.5s steps(30, end), blink-caret 2.0s step-end infinite;
+  animation: typing 2.5s steps(30, end), blink-caret 1.0s step-end infinite;
 }
 
 /* The typing effect */
@@ -27,30 +27,7 @@
     border-color: transparent;
   }
   50% {
-    border-color: #ECA72C;
+    border-color: #FAF0CA;
   }
-}
-
-/* styles.css */
-.scrollbar-custom {
-  scrollbar-width: thin; /* Solo para Firefox */
-  scrollbar-color: #221E22 #ECA72C; /* Color del thumb y del track */
-}
-
-
-/* WebKit browsers (Chrome, Safari) */
-.scrollbar-custom::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-.scrollbar-custom::-webkit-scrollbar-thumb {
-  background-color: #221E22; /* Color del thumb */
-  border-radius: 4px; /* Radio de borde */
-}
-
-
-.scrollbar-custom::-webkit-scrollbar-track {
-  background-color: #ECA72C; /* Color del track */
 }
 

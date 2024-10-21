@@ -1,27 +1,35 @@
-import CustomBtn from "../components/CustomBtn";
+import heroImage from "../assets/onepiece-hero.gif";
 
 function Home() {
   return (
-    <div className="hero flex justify-center h-full">
-      <div className="hero-content text-center">
+    <div
+      className="hero min-h-screen"
+      style={{
+        backgroundImage: `url(${heroImage})`,
+        backgroundSize: "30%",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="hero-overlay bg-opacity-60 bg-[#0D3B66]"></div>
+      <div className="hero-content text-neutral-content text-center">
         <div className="max-w-md typewriter">
-          <h1 className="text-5xl text-[#EE5622] font-bold animate-bounce">
+          <h1 className="text-5xl font-bold animate-bounce text-[#2AB0E1]">
             Welcome!
           </h1>
-          <p className="py-6 text-[#ECA72C]">
+          <p className="py-6 text-[#D1C9BA]">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto cum,
             iste nesciunt amet officiis tempore qui culpa labore ducimus nulla
             in ea esse sint, consequatur earum! Minima, autem voluptatum. Atque.
           </p>
-          {/* Redes sociales */}
-          {/* SVG Instagram */}
           <div className="flex justify-center gap-2 mb-4">
+            {/* SVG Instagram */}
             <a href="https://www.instagram.com/emirgelp/" target="blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
                 height="28"
-                fill="#EE5622"
+                fill="#D1C9BA"
                 class="bi bi-instagram"
                 viewBox="0 0 16 16"
               >
@@ -34,7 +42,7 @@ function Home() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
                 height="28"
-                fill="#EE5622"
+                fill="#D1C9BA"
                 class="bi bi-github"
                 viewBox="0 0 16 16"
               >
@@ -42,12 +50,15 @@ function Home() {
               </svg>
             </a>
             {/* SVG Linkedin */}
-            <a href="https://www.linkedin.com/in/emir-negrete-128941244/" target="blank">
+            <a
+              href="https://www.linkedin.com/in/emir-negrete-128941244/"
+              target="blank"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
                 height="28"
-                fill="#EE5622"
+                fill="#D1C9BA"
                 class="bi bi-linkedin"
                 viewBox="0 0 16 16"
               >
@@ -60,7 +71,7 @@ function Home() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
                 height="28"
-                fill="#EE5622"
+                fill="#D1C9BA"
                 class="bi bi-envelope-at"
                 viewBox="0 0 16 16"
               >
