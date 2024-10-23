@@ -8,7 +8,6 @@ const routes = [
 
 function Navbar() {
   return (
-    <>
       <nav className="md:block hidden h-14 bg-[#F8F8D4]">
         <ul className="flex justify-around items-center h-full text-[#3287C8] font-serif">
           <li>
@@ -25,7 +24,6 @@ function Navbar() {
           })}
         </ul>
       </nav>
-    </>
   );
 }
 
